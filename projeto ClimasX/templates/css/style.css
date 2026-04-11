@@ -1,0 +1,272 @@
+/* 🎨 PALETA CATPPUCCIN MOCHA */
+:root {
+    --bg: #1e1e2e;
+    --surface: #313244;
+    --overlay: #45475a;
+
+    --text: #cdd6f4;
+    --subtext: #a6adc8;
+
+    --blue: #89b4fa;
+    --mauve: #cba6f7;
+    --teal: #94e2d5;
+
+    --hover: #585b70;
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* BODY */
+body {
+    background: linear-gradient(135deg, #1e1e2e, #181825);
+    color: var(--text);
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+
+    background: rgba(49, 50, 68, 0.6);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--overlay);
+}
+
+/* LOGO */
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: var(--mauve);
+}
+
+/* MENU */
+nav a {
+    color: var(--text);
+    text-decoration: none;
+    margin-left: 25px;
+    position: relative;
+    transition: 0.3s;
+}
+
+/* HOVER LINHA */
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: var(--mauve);
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* HERO */
+.hero {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+    padding: 20px;
+}
+
+/* TITULO */
+.hero h1 {
+    font-size: 42px;
+    color: var(--blue);
+}
+
+/* TEXTO */
+.hero p {
+    font-size: 18px;
+    color: var(--subtext);
+}
+
+/* SEARCH BOX */
+.search {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+
+    background: rgba(49, 50, 68, 0.6);
+    padding: 10px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--overlay);
+}
+
+/* INPUT */
+.search input {
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    width: 220px;
+
+    background: var(--surface);
+    color: var(--text);
+}
+
+/* BOTÃO */
+.btn {
+    background: var(--mauve);
+    color: #1e1e2e;
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* HOVER BOTÃO */
+.btn:hover {
+    background: var(--blue);
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: rgba(49, 50, 68, 0.6);
+    border-top: 1px solid var(--overlay);
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        margin: 10px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .search {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .search input {
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* HEADER MODERNO */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+
+    background: rgba(30, 30, 46, 0.6);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid #313244;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* LOGO */
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #cba6f7;
+    letter-spacing: 1px;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+/* LINKS */
+nav a {
+    color: #cdd6f4;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+    position: relative;
+}
+
+/* HOVER SUAVE */
+nav a:hover {
+    color: #89b4fa;
+}
+
+/* LINHA ANIMADA */
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #cba6f7;
+    left: 0;
+    bottom: -4px;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* BOTÃO LOGIN (DESTAQUE) */
+nav a:last-child {
+    background: #cba6f7;
+    color: #1e1e2e;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+nav a:last-child:hover {
+    background: #89b4fa;
+    transform: scale(1.05);
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
