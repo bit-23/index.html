@@ -1,4 +1,4 @@
-/* 🎨 PALETA CATPPUCCIN MOCHA */
+/*PALETA CATPPUCCIN MOCHA */
 :root {
     --bg: #1e1e2e;
     --surface: #313244;
@@ -16,258 +16,259 @@
 
 /* RESET */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimentos padrão */
+    box-sizing: border-box; /* Inclui bordas e preenchimentos no cálculo de largura/altura */
+    font-family: 'Segoe UI', sans-serif; /* Fonte moderna e legível */
 }
 
 /* BODY */
 body {
-    background: linear-gradient(135deg, #1e1e2e, #181825);
-    color: var(--text);
+    background: linear-gradient(135deg, #1e1e2e, #181825); /* Fundo degradê escuro */
+    color: var(--text); /* Cor do texto principal */
 }
 
 /* HEADER */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
+    display: flex; /* Layout flexível para o header */
+    justify-content: space-between; /* Espaço entre logo e menu */
+    align-items: center; /* Alinhamento vertical */
+    padding: 20px 50px; /* Espaçamento interno */
 
-    background: rgba(49, 50, 68, 0.6);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid var(--overlay);
+    background: rgba(49, 50, 68, 0.6); /* Fundo semi-transparente */
+    backdrop-filter: blur(12px);   /* Efeito de desfoque para modernidade */
+    border-bottom: 1px solid var(--overlay); /* Linha de separação */
 }
 
 /* LOGO */
 .logo {
-    font-size: 26px;
-    font-weight: bold;
-    color: var(--mauve);
+    font-size: 26px; /* Tamanho da fonte para a logo */
+    font-weight: bold; /* Negrito para destaque */
+    color: var(--mauve); /* Cor da logo */
 }
 
 /* MENU */
 nav a {
-    color: var(--text);
-    text-decoration: none;
-    margin-left: 25px;
-    position: relative;
-    transition: 0.3s;
+    color: var(--text); /* Cor dos links do menu */
+    text-decoration: none; /* Remove sublinhado */
+    margin-left: 25px; /* Espaçamento entre os links */
+    position: relative;   /* Necessário para a linha animada */
+    transition: 0.3s; /* Transição suave para hover */
 }
 
 /* HOVER LINHA */
 nav a::after {
-    content: "";
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    background: var(--mauve);
-    left: 0;
-    bottom: -5px;
-    transition: 0.3s;
+    content: ""; /* Elemento vazio para a linha */
+    position: absolute; /* Posicionamento absoluto para a linha */
+    width: 0%;  /* Começa com largura zero */
+    height: 2px; /* Altura da linha */
+    background: var(--mauve); /* Cor da linha */
+    left: 0;   /* Alinhamento à esquerda do link */
+    bottom: -5px;/* Posicionamento abaixo do link */
+    transition: 0.3s; /* Transição suave para a linha */
 }
 
 nav a:hover::after {
-    width: 100%;
+    width: 100%; /* Expande a linha para toda a largura do link no hover */
 }
 
 /* HERO */
 .hero {
-    height: 85vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    text-align: center;
-    padding: 20px;
+    height: 85vh; /* Altura da seção hero */
+    display: flex; /* Layout flexível para centralizar conteúdo */
+    flex-direction: column; /* Alinhamento vertical dos elementos */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    gap: 15px; /* Espaçamento entre os elementos */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Espaçamento interno para dispositivos menores */
 }
 
 /* TITULO */
 .hero h1 {
-    font-size: 42px;
-    color: var(--blue);
+    font-size: 42px; /* Tamanho da fonte para o título */
+    color: var(--blue); /* Cor do título */
 }
 
 /* TEXTO */
 .hero p {
-    font-size: 18px;
-    color: var(--subtext);
+    font-size: 18px; /* Tamanho da fonte para o texto */
+    color: var(--subtext); /* Cor do texto secundário */
 }
 
 /* SEARCH BOX */
 .search {
-    display: flex;
-    gap: 10px;
-    margin-top: 20px;
+    display: flex; /* Layout flexível para a caixa de busca */
+    gap: 10px; /* Espaçamento entre o input e o botão */
+    margin-top: 20px; /* Espaçamento superior para separar do texto */
 
-    background: rgba(49, 50, 68, 0.6);
-    padding: 10px;
-    border-radius: 15px;
-    backdrop-filter: blur(10px);
-    border: 1px solid var(--overlay);
+    background: rgba(49, 50, 68, 0.6); /* Fundo semi-transparente para a caixa de busca */
+    padding: 10px; /* Espaçamento interno para o conteúdo da caixa de busca */
+    border-radius: 15px; /* Bordas arredondadas para um visual moderno */
+    backdrop-filter: blur(10px); /* Efeito de desfoque para modernidade */
+    border: 1px solid var(--overlay); /* Borda para destacar a caixa de busca */
 }
 
 /* INPUT */
 .search input {
-    padding: 12px;
-    border: none;
-    border-radius: 10px;
-    outline: none;
-    width: 220px;
+    padding: 12px; /* Espaçamento interno para o campo de entrada */
+    border: none; /* Remove borda padrão */
+    border-radius: 10px;   /* Bordas arredondadas para o campo de entrada */
+    outline: none; /* Remove contorno ao focar */
+    width: 220px; /* Largura do campo de entrada */
 
-    background: var(--surface);
-    color: var(--text);
+    background: var(--surface); /* Fundo para o campo de entrada */
+    color: var(--text); /* Cor do texto dentro do campo de entrada */
 }
 
 /* BOTÃO */
 .btn {
-    background: var(--mauve);
-    color: #1e1e2e;
-    padding: 12px 20px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
+    background: var(--mauve); /* Cor de fundo para o botão */
+    color: #1e1e2e; /* Cor do texto do botão */
+    padding: 12px 20px; /* Espaçamento interno para o botão */
+    border-radius: 10px; /* Bordas arredondadas para o botão */
+    text-decoration: none; /* Remove sublinhado para links que são botões */
+    font-weight: bold;  /* Negrito para destacar o botão */
+    transition: 0.3s; /* Transição suave para o hover do botão */
 }
 
 /* HOVER BOTÃO */
 .btn:hover {
-    background: var(--blue);
-    transform: scale(1.05);
+    background: var(--blue); /* Cor de fundo para o botão no hover */
+    transform: scale(1.05); /* Efeito de aumento para destacar o botão no hover */
 }
 
 /* FOOTER */
 footer {
-    text-align: center;
-    padding: 15px;
-    background: rgba(49, 50, 68, 0.6);
-    border-top: 1px solid var(--overlay);
+    text-align: center; /* Centraliza o texto do rodapé */
+    padding: 15px; /* Espaçamento interno para o rodapé */
+    background: rgba(49, 50, 68, 0.6); /* Fundo semi-transparente para o rodapé */
+    border-top: 1px solid var(--overlay); /* Linha de separação no topo do rodapé */
 }
 
 /* RESPONSIVO */
 @media (max-width: 768px) {
 
     header {
-        flex-direction: column;
-        gap: 10px;
+        flex-direction: column; /* Alinha os itens do header em coluna para telas menores */
+        gap: 10px; /* Espaçamento entre os itens do header para telas menores */
     }
 
     nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        display: flex; /* Layout flexível para o menu de navegação */
+        flex-wrap: wrap; /* Permite que os itens do menu quebrem para a próxima linha em telas menores */
+        justify-content: center; /* Centraliza os itens do menu em telas menores */
     }
 
     nav a {
-        margin: 10px;
+        margin: 10px; /* Espaçamento entre os links do menu para telas menores */
     }
 
     .hero h1 {
-        font-size: 28px;
+        font-size: 28px; /* Reduz o tamanho do título para telas menores */
     }
 
     .search {
-        flex-direction: column;
-        width: 100%;
+        flex-direction: column; /* Alinha os itens da caixa de busca em coluna para telas menores */
+        width: 100%; /* Faz a caixa de busca ocupar toda a largura disponível em telas menores */
     }
 
     .search input {
-        width: 100%;
+        width: 100%; /* Faz o campo de entrada ocupar toda a largura disponível dentro da caixa de busca em telas menores */
     }
 
     .btn {
-        width: 100%;
-        text-align: center;
+        width: 100%; /* Faz o botão ocupar toda a largura disponível em telas menores */
+        text-align: center; /* Centraliza o texto do botão em telas menores */
     }
 }
 
 /* HEADER MODERNO */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
+    display: flex;/* Layout flexível para o header */
+    justify-content: space-between;/* Espaço entre logo e menu */
+    align-items: center;/* Alinhamento vertical */
+    padding: 15px 40px;/* Espaçamento interno para o header */
 
-    background: rgba(30, 30, 46, 0.6);
-    backdrop-filter: blur(14px);
-    border-bottom: 1px solid #313244;
+    background: rgba(30, 30, 46, 0.6);/* Fundo semi-transparente para o header */
+    backdrop-filter: blur(14px);/* Efeito de desfoque para modernidade */
+    border-bottom: 1px solid #313244;/* Linha de separação no rodapé */
 
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    position: sticky;/* Garante que o header fique fixo no topo da página ao rolar */
+    top: 0;/* Garante que o header fique fixo no topo da página ao rolar */
+    z-index: 100;/* Garante que o header fique acima de outros elementos ao rolar a página */
 }
 
 /* LOGO */
 .logo {
-    font-size: 24px;
-    font-weight: 700;
-    color: #cba6f7;
-    letter-spacing: 1px;
+    font-size: 24px;/* Tamanho da fonte para a logo */
+    font-weight: 700;/* Negrito para destaque */
+    color: #cba6f7;/* Cor da logo */
+    letter-spacing: 1px;/* Espaçamento entre as letras para um visual mais moderno */
 }
 
 /* NAV */
 nav {
-    display: flex;
-    align-items: center;
-    gap: 25px;
+    display: flex;/* Layout flexível para o menu de navegação */
+    align-items: center;/* Alinha os itens do menu verticalmente */
+    gap: 25px; /* Espaçamento entre os links do menu */
 }
 
 /* LINKS */
 nav a {
-    color: #cdd6f4;
-    text-decoration: none;
-    font-size: 15px;
-    transition: 0.3s;
-    position: relative;
+    color: #cdd6f4;/* Cor dos links do menu */
+    text-decoration: none;/* Remove sublinhado */
+    font-size: 15px; /* Tamanho da fonte para os links do menu */
+    transition: 0.3s; /* Transição suave para hover */
+    position: relative; /* Necessário para a linha animada */
 }
 
 /* HOVER SUAVE */
 nav a:hover {
-    color: #89b4fa;
+    color: #89b4fa; /* Cor do link no hover */
 }
 
 /* LINHA ANIMADA */
 nav a::after {
-    content: "";
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    background: #cba6f7;
-    left: 0;
-    bottom: -4px;
-    transition: 0.3s;
+    content: ""; /* Elemento vazio para a linha */
+    position: absolute; /* Posicionamento absoluto para a linha */
+    width: 0%; /* Começa com largura zero */
+    height: 2px; /* Altura da linha */
+    background: #cba6f7; /* Cor da linha */
+    left: 0; /* Alinhamento à esquerda do link */
+    bottom: -4px; /* Posicionamento abaixo do link */
+    transition: 0.3s; /* Transição suave para a linha */
 }
 
 nav a:hover::after {
-    width: 100%;
+    width: 100%; /* Expande a linha para toda a largura do link no hover */
 }
 
 /* BOTÃO LOGIN (DESTAQUE) */
 nav a:last-child {
-    background: #cba6f7;
-    color: #1e1e2e;
-    padding: 8px 16px;
-    border-radius: 8px;
-    font-weight: bold;
+    background: #cba6f7;/* Cor de fundo para o botão de login */
+    color: #1e1e2e;/* Cor do texto do botão de login */
+    padding: 8px 16px; /* Espaçamento interno para o botão de login */
+    border-radius: 8px; /* Bordas arredondadas para o botão de login */
+    font-weight: bold; /* Destaque para o botão de login */
 }
 
-nav a:last-child:hover {
-    background: #89b4fa;
-    transform: scale(1.05);
+nav a:last-child:hover { /* HOVER PARA O BOTÃO DE LOGIN */
+    background: #89b4fa; /* Cor de fundo para o botão no hover */
+    transform: scale(1.05); /* Efeito de aumento para destacar o botão no hover */
 }
 
 /* RESPONSIVO */
 @media (max-width: 768px) {
     header {
-        flex-direction: column;
-        gap: 10px;
+        flex-direction: column; /* Alinha os itens do header em coluna para telas menores */
+        gap: 10px; /* Espaçamento entre os itens do header para telas menores */
     }
 
     nav {
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-wrap: wrap; /* Permite que os itens do menu quebrem para a próxima linha em telas menores */
+        justify-content: center; /* Centraliza os itens do menu em telas menores */
     }
 
 }
+
